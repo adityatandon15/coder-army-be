@@ -5,6 +5,7 @@ const userRoutes = require("./routes/userRoutes");
 const articleRoutes = require("./routes/articlesRoutes");
 const topicRoutes = require("./routes/topicRoutes");
 const subtopicRoutes = require("./routes/subtopicRoutes");
+const topicDataRoutes = require("./routes/topicDataRoutes");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use("/", userRoutes);
 app.use("/topics", topicRoutes);
 app.use("/subtopics", subtopicRoutes);
 app.use("/articles", articleRoutes);
+app.use("/topic-data", topicDataRoutes);
 
 app.get("/welcome", (req, res) => {
   res.status(200).send({ message: "Welcome to Coder Army" });

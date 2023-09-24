@@ -13,7 +13,6 @@ exports.createJwt = (payload) => {
 
 exports.verifyJwt = (token) => {
   jwt.verify(token, "secretkeyappearshere", (err, payload) => {
-    console.log("jwt error", err);
     if (err) {
       throw new Error("Invalid Token");
     }
