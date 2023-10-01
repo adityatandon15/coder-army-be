@@ -29,7 +29,7 @@ app.listen(PORT, () => {
   console.log("Server is running on port ", PORT);
   mongoose
     .connect(
-      "mongodb+srv://aayushkkalra30:1Mku6Q1Ho5anMSTc@cluster0.hjeoiib.mongodb.net/ayush-small-pp",
+      "mongodb+srv://adityatandon:mongodb@coderarmy.zqrpkde.mongodb.net",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
