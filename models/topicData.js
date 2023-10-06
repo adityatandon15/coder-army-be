@@ -7,6 +7,8 @@ const topicDataSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
+      hwLink: String,
+      solLink: String,
       subTopic: [
         {
           name: {
